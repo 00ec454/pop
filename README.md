@@ -26,7 +26,26 @@ AlertDialog dialog = builder.create();
 ```
 Serously! Well not anymore. Look at the following code with fun way to write it with ~Pop.
 ```java
-Pop.on(this).with().title(R.string.title).body(R.string.body).show();
+Pop.on(activity).with().title(R.string.title).body(R.string.body).show();
+```
+if you want to handle the button click, this is even more fun with naming and you can even have custom body of dialog.
+```java
+               Pop.on(this)
+                    .with()
+                    .title(R.string.title)
+                    .layout(R.layout.custom_pop)
+                    .when(new Pop.Yah() {
+                        @Override
+                        public void clicked(DialogInterface dialog, View view) {
+                            Toast.makeText(getBaseContext(), "Yah button clicked", Toast.LENGTH_LONG).show();
+                        }
+                    })
+                    .when(new Pop.Nah() {
+                        @Override
+                        public void clicked(DialogInterface dialog, View view) {
+                            Toast.makeText(getBaseContext(), "Nah button clicked", Toast.LENGTH_LONG).show();
+                        }
+                    }).show();
 ```
 ##License
 
