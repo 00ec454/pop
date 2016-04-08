@@ -24,7 +24,9 @@ builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener()
 // Create the AlertDialog
 AlertDialog dialog = builder.create();
 ```
-Serously! Well not anymore. Look at the following code with fun way to write it with ~Pop.
+
+## Serously! No more pain now. This how you create one.
+
 ```java
 Pop.on(activity).with().title(R.string.title).body(R.string.body).show();
 ```
@@ -47,6 +49,13 @@ if you want to handle the button click, this is even more fun with naming and yo
                         }
                     }).show();
 ```
+## How to include it in your project:
+
+```groovy
+dependencies {
+	compile 'com.vistrav:pop:1.0'
+}
+``` 
 ##License
 
     Licensed under the Apache License, Version 2.0 (the "License");
