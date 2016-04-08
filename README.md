@@ -1,5 +1,5 @@
 # pop - a quick android dialog building lib
-[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Pop-green.svg?style=true)](https://android-arsenal.com/details/1/3400)
 
 Buiding a dialog in android is why so much pain! Look at the following code you need to build a simple Dialog.
 ```java
