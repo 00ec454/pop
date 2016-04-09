@@ -56,6 +56,8 @@ dependencies {
 	compile 'com.vistrav:pop:1.0'
 }
 ``` 
+##You can contribute!
+In case you think you have some improvement, please feel free do pull request your feature and I would be happy to include it. Let's make this Pop very easy to use and rich with features.
 ##License
 
     Licensed under the Apache License, Version 2.0 (the "License");
