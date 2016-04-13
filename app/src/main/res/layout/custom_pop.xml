@@ -14,7 +14,7 @@
         android:padding="5dp"
         android:text="Name"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/et_name"
         android:layout_gravity="center_horizontal"/>
 
     <EditText
@@ -24,5 +24,5 @@
         android:padding="5dp"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText2"/>
+        android:id="@+id/et_password"/>
 </LinearLayout>
