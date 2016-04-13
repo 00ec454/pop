@@ -35,6 +35,8 @@ if you want to handle the button click, this is even more fun with naming and yo
                Pop.on(this)
                     .with()
                     .title(R.string.title)
+                    .icon(R.drawable.icon)
+                    .cancelable(false)
                     .layout(R.layout.custom_pop)
                     .when(new Pop.Yah() {
                         @Override
@@ -42,18 +44,26 @@ if you want to handle the button click, this is even more fun with naming and yo
                             Toast.makeText(getBaseContext(), "Yah button clicked", Toast.LENGTH_LONG).show();
                         }
                     })
-                    .when(new Pop.Nah() {
+                    .when(new Pop.Nah() { // ignore if dont need negative button
                         @Override
                         public void clicked(DialogInterface dialog, View view) {
                             Toast.makeText(getBaseContext(), "Nah button clicked", Toast.LENGTH_LONG).show();
                         }
-                    }).show();
+                    })
+                    .show(new Pop.View() { // assign value to view element
+                          @Override
+                          public void prepare(View view) {
+                            EditText etName = (EditText) view.findViewById(R.id.et_name);
+                            Log.i(TAG, "etName :: " + etName.getText());
+                            etName.setText("Test Name 123");
+                          }
+                     });
 ```
 ## How to include it in your project:
 
 ```groovy
 dependencies {
-	compile 'com.vistrav:pop:1.0'
+	compile 'com.vistrav:pop:2.0'
 }
 ``` 
 ##You can contribute!
