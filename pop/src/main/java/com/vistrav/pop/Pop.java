@@ -66,7 +66,7 @@ public class Pop {
         return this;
     }
 
-    public Pop title(@NonNull String title) {
+    public Pop title(@NonNull CharSequence title) {
         builder.setTitle(title);
         return this;
     }
@@ -76,8 +76,12 @@ public class Pop {
         return this;
     }
 
+    public Pop body(@NonNull android.view.View body) {
+        builder.setView(body);
+        return this;
+    }
 
-    public Pop body(@NonNull String body) {
+    public Pop body(@NonNull CharSequence body) {
         builder.setMessage(body);
         return this;
     }
