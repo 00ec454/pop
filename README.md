@@ -11,11 +11,11 @@ Pop.on(activity).with().title(R.string.title).body(R.string.body).show();
 
 ## How to include it in your project:
 
-Add `compile 'com.vistrav:pop:2.2'` in your app's gradle.build file in `dependencies` section and that is it! Just like this.
+Add `compile 'com.vistrav:pop:2.3'` in your app's gradle.build file in `dependencies` section and that is it! Just like this.
 
 ```groovy
 dependencies {
-	compile 'com.vistrav:pop:2.2'
+	compile 'com.vistrav:pop:2.3'
 }
 ``` 
 
