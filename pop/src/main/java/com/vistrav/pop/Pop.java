@@ -111,7 +111,7 @@ public class Pop {
         }
         if (aah != null) {
             int buttonId = aahButtonName != 0 ? aahButtonName : R.string.neutral;
-            builder.setNegativeButton(buttonId, new DialogInterface.OnClickListener() {
+            builder.setNeutralButton(buttonId, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                     aah.clicked(dialog, lView);
                 }
